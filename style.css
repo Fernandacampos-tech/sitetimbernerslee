@@ -1,0 +1,103 @@
+body {
+    margin: 0; /* painel inicia no canto da tela, sem dar espaço na margem esquerda */
+    padding-top: 800px; /* espaço entre o topo do site até o "Oi!*/
+    text-align: center; /* sem isso, nada fica centralizado */
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+#welcome {
+    position: absolute; /* faz o site iniciar no começo da tela, sem dar um espaço para baixo   */
+    bottom: 0;   /* faz o site iniciar no começo da tela, sem dar um espaço para baixo   */
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%); /* degradê de cores  */
+    display: table; /* transformar em tabela faz a section ficar centralizada  */
+    width: 100%;    /* ocupa 100% da tela na largura  */
+    height: 100%;   /* ocupa 100% da tela na altura  */
+}
+
+h1 {
+
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 300;
+
+}
+
+#name {
+    font-size: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: monospace;
+}
+
+#bio {
+    font-family:  'Cinzel Decorative', cursive;
+    padding: 50px;
+}
+
+.line {
+    height: 6px;
+    background-color: #000;
+    width: 70px;
+    margin: 8px auto;
+}
+
+.parallax-inner {  /* não mudou em nada o site */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu {
+    position: fixed; /*para que seja colocado fixo e visível o tempo todo ao rolar para baixo no site.*/
+    background: white;
+    width: 100%;   /* isso já é suficiente para centralizar o MENU, sem previsar da tag center*/
+    margin-top: 0px; /*a barra de navegação começa no topo da página sem nenhuma margem.*/
+    top: 0px; /*Como queremos manter o menu preso no topo da tela.*/
+    z-index: 10; 
+    /*Z-index: 10: refere-se à sobreposição de elementos html. O elemento de índice z superior é sobreposto ou exibido na sobre do
+     elemento de índice z inferior. Pode ser qlqr número, mas se não tiver, o menu fica por baixo da seção verde*/
+}
+
+
+.links{   
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: fantasy;
+    font-size: 20px
+}
+
+.links:hover {  /* O menu aumenta e fica com underline qdo passa o mouse*/
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none; /* remove o estilo de sublinhado*/
+}
+
+#writings a { /* aplica propriedades css somente ao q está dentro da tag <a>, dentro da seção writings*/
+    text-decoration: underline !important;
+    color: green !important;
+}
+
+#contact{
+    background:lightgray;
+}
+
+#contact iframe{
+    width: 100%; /* largura do mapa na tela*/
+}
+
+.contact_1 h3
+{
+    display: inline;
+}
+
